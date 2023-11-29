@@ -1,0 +1,10 @@
+.MuiDialogContent-root{
+    display: flex;
+  }
+  .MuiDialog-paper{
+    max-width: 670px !important;
+  }
+
+  #team-form-control{
+    width: 285px;
+  }

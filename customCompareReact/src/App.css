@@ -1,0 +1,422 @@
+.mainContainer {
+  display: flex;
+  /* width: max-content; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+.mainTable {
+  overflow: auto;
+  border-spacing: 0px;
+  background-color: white;
+  font-size: 14px;
+  display: grid;
+  scroll-behavior: smooth;
+  height: calc(100vh - 286px);
+  box-sizing: border-box;
+}
+
+.titleBar {
+  background-color: #eef1f5;
+}
+
+.titleBarHeading {
+  display: inline-block;
+  min-width: 226px;
+  padding-left: 25px;
+}
+
+/* Universal style sheet for Income Statements Evolution */
+
+select {
+  height: 25px;
+  padding: 0 2rem 0 1rem !important;
+  margin-right: 2rem !important;
+}
+
+.actionBarWrapper,
+.actionBarWrapper h3,
+.actionBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.actionBarWrapper h3 {
+  left: 0;
+}
+
+.actionBar {
+  right: 0;
+}
+
+.filterBarWrapper {
+  position: sticky;
+  top: 43px;
+  z-index: 9;
+}
+
+.titleBarWrapper {
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.titleBarHeadingWrapper {
+  background-color: #fff;
+  /* padding-left: 201px; */
+}
+
+.dataRow:hover {
+  background-color: #d4d7df;
+}
+
+tr {
+  width: 100%;
+}
+
+.titleBarSelect {
+  display: inline-flex;
+  align-items: center;
+  float: right;
+  padding: 5px 0px;
+}
+
+.titleBarSelect label {
+  padding-right: 6px;
+}
+
+.headerRow {
+  font-family: 'Roboto', "Helvetica Neue", sans-serif;
+}
+
+.childrenTable {
+  border-spacing: 0px;
+  font-size: 12px;
+  table-layout: fixed;
+  width: 100%;
+  font-weight: normal;
+}
+
+
+.headerCell {
+  text-align: right;
+  padding: 2px;
+  width: 175px;
+}
+
+.childrenTableRowHidden {
+  display: none;
+  width: 100%
+}
+
+.childrenTableRowShow {
+  display: table-row;
+  width: 100%
+}
+
+.childrenRow {}
+
+.childrenDivRowHidden {
+  display: none;
+}
+
+.childrenDivRowShow {
+  display: flex;
+  clear: both;
+}
+
+.childrenName {
+  padding-left: 50px;
+}
+
+/* only if header is true */
+
+.tableheader {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+  vertical-align: inherit;
+  font-size: 16px;
+}
+
+.BlueText {
+  color: #245398;
+}
+
+.lineitemrow {}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  background-color: #eff1f5;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.controlButtons {
+  margin: 4px !important;
+}
+
+/* classes to creak topsection box */
+.topSection {
+  background-color: #eceff3;
+  font-size: 12px;
+}
+
+.topSectionCell {
+  text-align: right;
+  padding: 0px 0.75rem;
+  width: 180px;
+}
+
+
+/* .topSectionTop {
+  border-top: 1px solid #aaaaaa;
+} */
+
+/* .topSectionLSide {
+  border-left: 1px solid #aaaaaa;
+} */
+
+/* .topSectionRSide {
+  border-right: 1px solid #aaaaaa;
+} */
+
+.topSectionBottom {
+  border-bottom: 1px solid rgba(0, 0, 0, .85);
+}
+
+/* End classes to creak topsection box */
+
+.borderBottom {
+  border-bottom: 1px solid rgba(0, 0, 0, .85);
+}
+
+.borderTop {
+  border-top: 1px solid rgba(0, 0, 0, .85);
+  background-color: #fff;
+}
+
+.doubleUnderline {
+  border-bottom: 3px double rgba(0, 0, 0, .85);
+}
+
+.spacer {
+  height: 5px;
+}
+
+.expandIcons {
+  vertical-align: bottom;
+}
+
+.drillDownTotal {
+  border-bottom: 6px double rgba(0, 0, 0, .85);
+  border-top: 1px solid rgba(0, 0, 0, .85);
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.softRed {
+  color: #FC6C85 !important;
+}
+
+.softGrey {
+  color: rgb(99 99 99);
+}
+
+.drillDownLink {
+  color: #245398;
+  text-decoration: underline;
+}
+
+#addColBtn:hover {
+  cursor: pointer;
+}
+
+.nameCol {
+  padding-left: 25px;
+}
+
+/* .tableheader .nameCol,
+.tableheader .dataCell{
+  padding-top: 10px;
+  padding-bottom: 3px;
+} */
+
+.nameCol,
+.dataCell {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.borderGray {
+  border: 1px solid #6b7280;
+}
+
+.topSection:first-child {
+  padding-top: 0.75rem;
+}
+
+.topSection:nth-child(6) {
+  padding-bottom: 0.75rem;
+}
+
+.table-name {
+  width: 226px;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: sticky;
+  left: 0px;
+  background-color: inherit;
+}
+
+.nameCol>button {
+  position: absolute;
+  left: 0;
+}
+
+.SGS {
+  color: rgba(231, 136, 32, 1);
+  border-bottom: 4px solid #f09f46;
+}
+
+.PM {
+  color: rgba(74, 133, 187, 1);
+  border-bottom: 4px solid #78abda;
+}
+
+.Environmental {
+  color: rgba(145, 171, 27, 1);
+  border-bottom: 4px solid #c0d26c;
+}
+
+.Engineering {
+  color: rgba(98, 94, 161, 1);
+  border-bottom: 4px solid #8582bd;
+}
+
+.PNW {
+  color: #2aa2c0;
+  border-bottom: 4px solid #3aa0b9;
+}
+
+.Infrastructure,
+.Consolidated,
+.Groups,
+.total {
+  border-bottom: 4px solid #B6C5D2;
+}
+
+.total {
+  /* margin-bottom: 47px; */
+}
+
+.px-0 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.tableheader {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.borderBtmExpand:last-child {
+  color: red
+}
+
+.align-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.MuiFormGroup-root label span span {
+  color: #EC8C23
+}
+
+.css-ggqdzn-MuiButtonBase-root-MuiSwitch-switchBase .Mui-checked .MuiSwitch-track {
+  background-color: green
+}
+
+.MuiSwitch-track .css-1yjjitx-MuiSwitch-track {
+  background-color: green
+}
+
+.headerTitle {
+  min-height: 87px;
+}
+
+.editmode {
+  margin-top: 25.5px;
+}
+
+.total {
+  padding-bottom: 7px;
+}
+
+.editMode {
+  padding-bottom: 1px;
+}
+
+/* xcel button classes */
+
+
+.blackText {
+  color: black;
+}
+
+.controlBtn {
+  margin: 4px;
+}
+
+.m-t0 {
+  margin-top: 0px
+}
+
+.excelbtn {
+  margin: auto 0px;
+}
+
+.tertiary {
+  background-color: #eceff3 !important;
+}
+
+.tertiary:hover {
+  background-color: #B6C5D2 !important
+}
+
+.mdl-button--raised:focus:not(:active) {
+  background-color: #B6C5D2 !important
+}
+
+.runBtn {
+  margin: 1rem 0 1rem 0.5rem !important;
+}
+
+/* .syncwrap {
+  display: flow-root;
+  position: "relative" 
+} */
+
+@media (max-width: 1240px) {
+  .titleBarSelect select {
+    margin-right: 1rem !important;
+    padding: 0 1.5rem 0 .5rem !important;
+    font-size: 14px;
+  }
+}

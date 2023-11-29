@@ -1,0 +1,55 @@
+.appNavbar {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    min-height: 48px;
+    width: 100%;
+    background-color: #eee;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.appNavName {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 264px;
+}
+
+.appNameText {
+    color: #245398;
+    opacity: 1;
+    font-weight: bold;
+
+}
+
+.appNavTab {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.appNavButtons {
+    color: #245398;
+    opacity: 1;
+    width: 100%;
+}
+
+.appNavTapSelect {
+    border-bottom: 2px solid #ec8c23;
+}
+/* 
+.nameCol {
+    max-width: 375px;
+    border-right: 1px solid black;
+    padding-left: 25px;
+} */
+
+.appNavButtons {
+    padding: 12px;
+    font-size: 14px;
+}
